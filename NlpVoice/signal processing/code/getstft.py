@@ -1,4 +1,4 @@
-#将声音信号转变为
+#将声音信号转变为短时傅里叶谱
 from pandas import set_eng_float_format
 import torch
 from torch import stft
