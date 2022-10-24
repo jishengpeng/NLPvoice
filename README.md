@@ -14,6 +14,8 @@ The process of learning phonetics
 ### 10.24
 #### 1.阅读了Tacotron的论文
 ###### tacotron是开创了语音合成端到端系列的文章，首先输入是字符，输出是频谱（语谱）。然后再用一个简单的声码器将语谱转化为波，主体框架是seq2seq。编码器和解码器还是比较复杂的，用到了很多的trick和经典的架构，里面有很多细节。然后实验方面做的相对简单。
+#### 2.简略阅读了Tacotron2的论文
+###### Tacotron2使用了一个和优化后的Wavenet模型来代替Griffin-Lim算法（声码器部分），然后主要用的是梅尔频谱，同时也对Tacotron模型的一些细节也做了更改，不使用CBHG，而是使用普通的LSTM和Convolution layer，decoder每一步只生成一个frame，增加post-net，即一个5层CNN来精调mel-spectrogram最终生成了十分接近人类声音的波形。
 
 
 
