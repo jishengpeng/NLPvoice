@@ -18,6 +18,14 @@ The process of learning phonetics
 ###### Tacotron2使用了一个和优化后的Wavenet模型来代替Griffin-Lim算法（声码器部分），然后主要用的是梅尔频谱，同时也对Tacotron模型的一些细节也做了更改，不使用CBHG，而是使用普通的LSTM和Convolution layer，decoder每一步只生成一个frame，增加post-net，即一个5层CNN来精调mel-spectrogram，最终生成了十分接近人类声音的波形。
 
 
+### 10.25
+###### 大致上把text_to_speech.pdf阅读完
+
+### 10.26-10.27
+###### 大致上把沐神《动手学深度学习》看了一遍，代码部分看过，并没有运行，其中第七到九章，优化算法，计算性能，计算机视觉，跳过未看。
+
+
+
 
 #### 后续
 1.继续啃书《语音合成》
